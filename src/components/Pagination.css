@@ -1,0 +1,35 @@
+a {
+	text-decoration: none;
+	color: #ef233c;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid #ef233c;
+	padding: 0 4px;
+	cursor: pointer;
+}
+.pagination {
+	position: relative;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	/* padding-top: 15px; */
+}
+.pagination li {
+	margin-left: 5px;
+}
+a :active {
+	background-color: #ef233c;
+	color: white;
+}
+a:hover {
+	background-color: #ef233c;
+	color: white;
+}
+a {
+	margin-bottom: 0;
+}
+ul,
+nav {
+	padding: 0;
+	margin: 0;
+}
