@@ -1,13 +1,8 @@
 import './App.css'
-import {useState, useEffect,useContext} from 'react'
+import {useState, useEffect} from 'react'
 import Cards from './components/Cards';
 import Pagination from './components/Pagination'
-import Toolbar from './components/toolbar';
-
-// const getProfiles = () => {
-
-// }
-
+import Toolbar from './components/Toolbar';
 
 function App() {
   const [profiles,setProfiles] = useState([])
@@ -58,13 +53,11 @@ function App() {
          
         <div className={`app app-${theme}`}>
         <Toolbar toggleTheme={toggleTheme} input={input} setInput={setInput} theme={theme}/>
-      <Cards loading={loading} error={Error} profiles = {filteredArray} theme={theme}/>
+      <Cards loading={loading} error={error} profiles = {filteredArray} theme={theme}/>
       {input === "" && <Pagination paginate={paginate} totalCards={profiles.length} cardsPerPage={cardsPerPage}/>}
     </div>
     
   );
-          
-  
 }
 
 export default App;

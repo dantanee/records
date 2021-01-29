@@ -2,7 +2,7 @@ import React from 'react'
 import './Card.css'
 import {FaPhoneAlt,FaGlobe,FaCcVisa, FaLock, FaInternetExplorer, FaUserAlt, FaEnvelope, FaAddressCard, 
   FaLink, FaUser, FaMale, FaFemale, FaCcPaypal, FaMoneyCheck, FaMapMarker, FaMapMarked, FaCcMastercard} from 'react-icons/fa'
-import Tooltip from './tooltip'
+import Tooltip from './Tooltip'
 
 
 export default function Cards({loading,theme,profiles,error}) {
