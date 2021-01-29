@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaMoon} from 'react-icons/fa'
-import './toolbar.css';
+import './Toolbar.css';
 function Toolbar ({theme,toggleTheme,input,setInput}) {
     return(
         <div className={`toolbar toolbar-${theme}`}>
