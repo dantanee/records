@@ -1,7 +1,7 @@
 import React from 'react'
 import './Card.css'
 import {FaPhoneAlt,FaGlobe,FaCcVisa, FaLock, FaInternetExplorer, FaUserAlt, FaEnvelope, FaAddressCard, 
-  FaLink, FaUser, FaMale, FaFemale, FaCcPaypal, FaMoneyCheck, FaMapMarker, FaMapMarked, FaCcMastercard} from 'react-icons/fa'
+  FaMale, FaFemale, FaCcPaypal, FaMoneyCheck, FaMapMarker, FaMapMarked, FaCcMastercard} from 'react-icons/fa'
 import Tooltip from './Tooltip'
 
 
