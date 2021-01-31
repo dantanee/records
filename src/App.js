@@ -6,7 +6,7 @@ import Toolbar from './components/Toolbar';
 
 function App() {
   const [profiles,setProfiles] = useState([])
-  const [loading,setLoading] = useState(true)
+  const [loading,setLoading] = useState(false)
   const [error,setError] = useState(null);
   const [currentPage,setCurrentPage] = useState(1);
   const [cardsPerPage] = useState(20)
@@ -14,13 +14,13 @@ function App() {
   const [theme,setTheme] = useState('light');
   
   const getProfile = async () => {
+    setLoading(true)
     try{
-      setLoading(true)
       const res = await fetch("https://api.enye.tech/v1/challenge/records")
       const record = await res.json()
       setLoading(false)
-      const {records}  = record;
-      setProfiles(records.profiles)
+      const {records:{profiles}}  = record;
+      setProfiles(profiles);
     }
     catch (err){
         setLoading(false);

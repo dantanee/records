@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaMoon} from 'react-icons/fa'
+import {FaLightbulb, FaMoon} from 'react-icons/fa'
 import './Toolbar.css';
 function Toolbar ({theme,toggleTheme,input,setInput}) {
     return(
@@ -11,7 +11,10 @@ function Toolbar ({theme,toggleTheme,input,setInput}) {
             value={input}
              onChange={(event) => setInput(event.target.value)}/>
           </div>
-          <FaMoon color="white" size={28} onClick={toggleTheme} style={{cursor:'pointer'}}/>
+
+          {theme === 'light' ?<FaMoon color="white" size={28} onClick={toggleTheme} style={{cursor:'pointer'}}/>:
+          <FaLightbulb color="white" size={28} onClick={toggleTheme} style={{cursor:'pointer'}} />
+          }
           
         </nav>
       </div>
